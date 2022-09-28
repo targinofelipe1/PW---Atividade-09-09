@@ -73,5 +73,5 @@ repositorioPessoas.pessoas
     .forEach(pessoa => {console.log('Pessoa: ' + pessoa.nome + ' - Saldo Total: ' + (<Cliente | Empresa> pessoa).saldoTotalContas() + ' - Média Saldos: ' + (<Cliente | Empresa> pessoa).mediaSaldoContas());
     });
 
-empresa1.removerConta('4');
-console.log(empresa2.pesquisarConta('5'));
+empresa3.removerConta('6');
+console.log(empresa1.pesquisarConta('4'));
