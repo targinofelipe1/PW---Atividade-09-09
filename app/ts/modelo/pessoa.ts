@@ -53,10 +53,7 @@ class Pessoa {
   }
 
   removerConta(numero: string) {
-      this._contas.splice(
-          this._contas.findIndex(conta => conta.numero === numero),
-          1
-      );
+      this._contas.splice(this._contas.findIndex(conta => conta.numero === numero),1);
   }
 
   pesquisarConta(numero: string): Conta {
