@@ -40,11 +40,8 @@ class Pessoa {
   }
 
   saldoTotalContas(): number {
-      return this._contas.map(conta => {
-          return conta.getSaldo();
-      }).reduce((saldoAnterior, saldoAtual) => {
-          return saldoAnterior + saldoAtual
-      });
+      return this._contas.map(conta => {return conta.getSaldo();
+      }).reduce((saldoAnterior, saldoAtual) => {return saldoAnterior + saldoAtual});
   }
 
   mediaSaldoContas(): number {
